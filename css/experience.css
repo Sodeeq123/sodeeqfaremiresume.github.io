@@ -1,0 +1,66 @@
+
+.Main__Container__Experience__Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1.5rem;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "Experience1 Experience2"
+                "Experience3 Experience4";
+}
+
+@media (max-width: 768px) {
+    .Main__Container__Experience__Grid {
+        height: 100%;
+        grid-template-columns:100%;
+        grid-gap: 1rem;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "Experience1"
+                    "Experience2"
+                    "Experience3"
+                    "Experience4";
+    }
+}
+
+.Experience1 {
+    grid-area: Experience1;
+    width: 100%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Experience1 h2::before, .Experience2 h2::before, .Experience3 h2::before, .Experience4 h2::before   {
+    content: "";
+    display: inline-flex;
+    width: 8px;
+    height: 74px;
+    background: #FF4C4C;
+    padding: 1rem 0;
+}
+
+.Main__Container__Experience h3{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.Main__Container__Experience__Grid p{
+    margin-top: 1rem;
+    color: var(--bg-black-100)
+}
+
+
+.Experience2 {
+    grid-area: Experience2;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.Experience3 {
+    grid-area: Experience3;
+    width: 100%;
+}
+
+.Experience4 {
+    grid-area: Experience4;
+    width: 100%;
+}

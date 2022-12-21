@@ -1,0 +1,87 @@
+
+h1, h2, h3, h4 {
+    font-stretch: 100%;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    letter-spacing: var(--letter-spacing);
+    font-weight: var(--weight);
+}
+
+h1 {
+    --min: 1.75rem;
+    --val: 5vw;
+    --max: 2.5rem;
+    --letter-spacing: 0;
+    --weight: 700;
+}
+
+h2 {
+    --min: 1.5rem;
+    --val: 4vw;
+    --max: 2rem;
+    --letter-spacing: 0;
+    --weight: 600;
+}
+
+h3 {
+    --min: 1.25rem;
+    --val: 3vw;
+    --max: 1.75rem;
+    --letter-spacing: 0;
+    --weight: 500;
+}
+
+h4 {
+    --min: 1rem;
+    --val: 2vw;
+    --max: 1.5rem;
+    --letter-spacing: 0;
+    --weight: 500;
+}
+
+
+
+.extra-large-text-medium, .extra-large-text-regular, .large-text-medium, .large-text-regular, .medium-text-medium, .medium-text-regular, .small-text-medium, .small-text-regular, .extra-small-text-medium, .extra-small-text-regular {
+    font-weight: var(--weight);
+    font-size: clamp(var(--min), var(--val), var(--max));
+    letter-spacing: var(--letter-spacing);
+}
+
+.extra-large-text-medium, .extra-large-text-regular {
+    --min: 1rem;
+    --val: 4vw;
+    --max: 1.5rem;
+}
+
+.large-text-medium, .large-text-regular {
+    --min: 0.75rem;
+    --val: 3vw;
+    --max: 1.25rem;
+}
+
+.medium-text-medium, .medium-text-regular {
+    --min: 0.75rem;
+    --val: 2vw;
+    --max: 1rem;
+}
+
+.small-text-medium, .small-text-regular {
+    --min: 0.65rem;
+    --val: 1.5vw;
+    --max: 0.9rem;
+}
+
+.extra-small-text-medium, .extra-small-text-regular {
+    --min: 0.25rem;
+    --val: 1vw;
+    --max: 0.5rem;
+}
+
+.extra-large-text-medium, .large-text-medium, .medium-text-medium, .small-text-medium, .extra-small-text-medium {
+    --letter-spacing: 0;
+    --weight: 500;
+}
+
+.extra-large-text-regular, .large-text-regular, .medium-text-regular, .small-text-regular, .extra-small-text-regular {
+    --letter-spacing: 0;
+    --weight: 500;
+}

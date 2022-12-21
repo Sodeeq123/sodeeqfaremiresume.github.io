@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My First Web Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--    CSS FILES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+<!--    JAVASCRIPT FILE-->
+    <script src="./javascript/scripts.js" defer></script>
+</head>
+<body>
+
+<div class="Main__NavBar__Container">
+    <div class="Main__NavBar__Container__Sub">
+        <div class="Main__NavBar__Logo">
+            <span>
+                CV
+            </span>
+        </div>
+        <div class="Main__NavBar__Menu">
+            <ul>
+                <li><a href="#">
+                    <button class="NavBar__Menu__Selected medium-text-medium">
+                        Home
+                    </button>
+                </a></li>
+                <li><a href="#">
+                    <button onClick="moveToAbout()" class="NavBar__Menu__UnSelected ">
+                            Skills
+                    </button>
+
+                </a></li>
+                <li><a href="#">
+                    <button  onClick="moveToContactDetails()" class="NavBar__Menu__Button medium-text-medium">
+                        Contact Me
+                    </button>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="Main__Container">
+    <div class="Main__Container__Sub">
+        <div class="Main__Container__Sub__Left">
+            <div class="Main__Container__Sub__Left__Info">
+                <p class="medium-text-medium">
+                    About Me
+                </p>
+                <h2>
+                    Sodeeq <span> Faremi</span>
+                </h2>
+                <p class="small-text-regular">
+                    I am a dedicated young professional intending to continue my development in the Earth Science field.
+                    I
+                    think in terms of results and objectives, I am enthusiastic and I work with decisiveness and
+                    conviction.
+                    I have aproactive attitude and find positive ways to stimulate and engage with people
+                </p>
+
+                <div class="Main__Container__Sub__Button">
+                    <div class="medium-text-medium">
+                        Check Resume
+                    </div>
+                    <i class="fas fa-light fa-arrow-right"></i>
+                </div>
+                <div class="Main__Container__Sub__SocialMedia">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/sodeeq-faremi-8a42ab14b">
+                            <i class="fab fa-light fa-linkedin-in"></i>
+                        </a></li>
+                        <li><a href="https://www.facebook.com/faremi.sodeeq?mibextid=ZbWKwL">
+                            <i class="fab fa-light fa-facebook-f"></i>
+                        </a></li>
+                        <li><a href="https://twitter.com/faremiSodeeq?t=A4UEAyNaWbkEAaMM_1zjNw&s=09">
+                            <i class="fab fa-light fa-twitter"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fab fa-light fa-instagram"></i>
+                        </a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Main__Container__Sub__Right">
+            <img alt="profile" src="./public/images/profile.svg">
+        </div>
+    </div>
+    <div id="Skills" class="Main__Container__SkillSet">
+        <h3>
+            Skill Set
+        </h3>
+        <div class="Main__Container__SkillSet__List">
+            <div class="Main__Container__SkillSet__List__Item__1">
+
+                <i class="fa-sharp fa-solid fa-file-csv"></i>
+
+                <h3>
+                    Proficient in Excel
+                </h3>
+
+            </div>
+            <div class="Main__Container__SkillSet__List__Item__2">
+                <i class="fa-solid fa-map"></i>
+                <h3>
+                    ArcGisPro
+                </h3>
+            </div>
+            <div class="Main__Container__SkillSet__List__Item__3">
+                <i class="fa-sharp fa-solid fa-database"></i>
+                <h3>
+                    SQL
+                </h3>
+            </div>
+            <div class="Main__Container__SkillSet__List__Item__4">
+                <i class="fas fa-code  "></i>
+                <h3>
+                    Python
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="Main__Container__Experience">
+        <h3>Experience</h3>
+        <div class="Main__Container__Experience__Grid">
+            <div class="Experience1">
+                <h2>
+                    Field Work
+                </h2>
+                <p class="medium-text-regular"> 09/2018 to 10/2018</p>
+            </div>
+            <div class="Experience2">
+                <h2>
+                    Project Work- 02/2019 to 10/2019
+                </h2>
+                <p class="medium-text-regular"> Preliminary Assessment of the Geothermal Energy Potential in Parts of
+                    SouthwesternNigeria.
+                    Correlation of lithologies from different boreholewells in the study area.
+                    Understanding the terrain and geology of the study area.
+                    Evaluating the geothermalpotential of the study area.</p>
+            </div>
+            <div class="Experience3">
+                <h2>
+                    Geologic Mapping Exercise, Alarere
+                </h2>
+                <p class="medium-text-regular"> Detailed compassmapping of the whole area.
+                    Production of a geological map of the area.</p>
+            </div>
+            <div class="Experience4">
+                <h2>Survey Exercise of Herbert Park, Ballsbridge, Dublin
+                </h2>
+                <p class="medium-text-regular">Spatial acquisitions exercise of the entire park using Survey123. Presenting results in ArcGis Pro. Data of animals in the park were recorded and analysed for the survey </p>
+            </div>
+        </div>
+    </div>
+
+   <div class="Main__Container__Audio">
+       <div class="Main__Container__Audio__Sub">
+           <div  class="Main__Container__Audio__Image">
+               <img alt="audio" src="./public/images/profile.svg">
+           </div>
+           <audio controls>
+               <source src="./public/audio/audio.ogg" type="audio/ogg">
+               <!--            <source src="horse.mp3" type="audio/mpeg">-->
+               Your browser does not support the audio element.
+           </audio>
+       </div>
+   </div>
+
+    <div class="Main__Container__Contact__Form">
+        <h1>
+            Let's work together
+        </h1>
+
+        <p> Contact me</p>
+        <label>
+            <input placeholder="Name" name="name" type="text">
+        </label>
+        <label>
+            <input name="email" type="email" placeholder="Email">
+        </label>
+        <label>
+            <textarea name="name" placeholder="Message">
+            </textarea>
+        </label>
+        <div class="Main__Container__Contact__Form__Button">
+            Send Message
+        </div>
+    </div>
+
+    <div id="Contact" class="Main__Container__Contact">
+        <div class="Main__Container__Contact__Item">
+            <div class="Main__Container__Contact__LeadIcon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="Main__Container__Contact__Item__Text">
+                <p>Address</p>
+                <p class="medium-text-regular">
+                    103, Sanford Road, Ranelagh, Dublin 06
+                </p>
+            </div>
+        </div>
+        <div class="Main__Container__Contact__Item">
+            <div class="Main__Container__Contact__LeadIcon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="Main__Container__Contact__Item__Text">
+                <p>Phone</p>
+                <p class="medium-text-regular">
+                    0894916597
+                </p>
+            </div>
+        </div>
+        <div class="Main__Container__Contact__Item">
+            <div class="Main__Container__Contact__LeadIcon">
+                <i class="fas fa-envelope  "></i>
+            </div>
+            <div class="Main__Container__Contact__Item__Text">
+                <p>Email</p>
+                <p class="medium-text-regular">
+                    faremisodeeq@gmail.com</p>
+            </div>
+        </div>
+    </div>
+   <div class="BackToTopContainer">
+       <button onclick="moveToTop()" class="BackToTop">
+           <i class="fa fa-arrow-up" aria-hidden="true"></i>
+       </button>
+   </div>
+</div>
+</body>
+</html>
