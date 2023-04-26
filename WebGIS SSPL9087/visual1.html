@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Broadband in Ireland</title>
+    <link rel="icon" href="img/favicon32.png" type="image/x-icon">
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        .row {
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="row">
+    <div class="col-9">
+        <img src="assets/visual.png">
+    </div>
+    <div class="col-3 ">
+        <div class="container">
+            <h1>Windfarm in Ireland</h1>
+            <img src = 'assets/windfarm.jpeg'>
+            <p>
+                Wind energy has emerged as a crucial source of renewable energy in Ireland in recent years, with wind farms playing a significant role in meeting the country's energy demands. Ireland's geographic location and favorable weather conditions have made it an ideal location for wind energy generation. As a result, wind farms have been established throughout the country, and their contribution to the national energy mix is increasing rapidly. In this article, we will explore the growth of wind energy in Ireland, its impact on the country's energy mix, and the challenges and opportunities it presents for the future.
+            </p>
+            <button   onclick="window.location.href='index.html'"  type="button" class="btn btn-primary">Go to Map 1</button>
+            <button   onclick="window.location.href='map2.html'" type="button" class="btn btn-primary">Go to Map 2</button>
+            <button onclick="window.location.href='https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/dek3tyd5mptykem/keplergl_kls84ej.json'"
+                    type="button" class="btn btn-success">Go to Map 1 Visualization With kepler.gl
+            </button>
+            <button   onclick="window.location.href='visual1.html'" type="button" class="btn btn-success">Go to Map 2 Visualization With kepler.gl</button>
+            <button   onclick="window.location.href='info.html'" type="button" class="btn btn-info">Map Info Page</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

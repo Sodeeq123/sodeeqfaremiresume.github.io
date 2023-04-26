@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind Energy and Wind Farms in Ireland</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .jumbotron {
+            margin-top: 2rem;
+            background-image: url('assets/windfarm.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+
+        .container {
+            margin-top: 2rem;
+        }
+
+        .container .btn {
+            margin-top: 1rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-9">
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="display-4 text-light">Wind Energy and Wind Farms in Ireland</h1>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <h2>Introduction</h2>
+                <p>Wind energy is a renewable power source that has become increasingly important in the fight against
+                    climate change. In Ireland, wind energy is essential to the country's renewable energy mix.
+                    According to the Sustainable Energy Authority of Ireland (SEAI), wind energy accounted for 36.1% of
+                    Ireland's electricity generation in 2020, making it the country's most significant source of
+                    renewable energy (SEAI, 2021).</p>
+                <p>Wind farms are large installations of wind turbines, which are the primary way of harnessing wind
+                    energy. These farms are located in areas with high wind speeds, such as coastal regions and hills.
+                    Ireland has made significant progress in developing wind energy and wind farms in recent years. The
+                    government has set ambitious targets to increase the country's renewable energy capacity, intending
+                    to achieve 70% renewable electricity by 2030 (Government of Ireland, 2019).</p>
+                <p>This topic is of great importance as wind energy has the potential to significantly reduce Ireland's
+                    dependence on fossil fuels, lower carbon emissions, and enhance energy security. Wind farms can also
+                    positively impact the environment, economy, and society. </p>
+                <p>This project involves creating a WebMap and WebAtlas (integrated into a GitHub webpage), which
+                    explores the number of farms per county, location, and efficiency of wind farms in Ireland. This web
+                    map is styled with legends, popups, and marker clusters showing details of each farm. Also, a
+                    visualization page was created to give a better view of the spread of each wind farm in each county
+                    in Ireland. Ultimately, this project aims to provide a comprehensive overview of wind energy and
+                    wind farms in Ireland better to understand their location, quality, and efficiency.</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="container">
+                <button   onclick="window.location.href='index.html'"  type="button" class="btn btn-primary">Go to Map 1</button>
+                <button   onclick="window.location.href='map2.html'" type="button" class="btn btn-primary">Go to Map 2</button>
+                <button onclick="window.location.href='https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/dek3tyd5mptykem/keplergl_kls84ej.json'"
+                        type="button" class="btn btn-success">Go to Map 1 Visualization With kepler.gl
+                </button>
+                <button   onclick="window.location.href='visual1.html'" type="button" class="btn btn-success">Go to Map 2 Visualization With kepler.gl</button>
+                <button   onclick="window.location.href='info.html'" type="button" class="btn btn-info">Map Info Page</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
